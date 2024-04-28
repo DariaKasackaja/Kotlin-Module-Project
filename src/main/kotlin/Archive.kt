@@ -1,6 +1,6 @@
 class Archive(name: String) : Element( name ){
-    var elements: MutableList<Note> = mutableListOf()
-    var container = Container("Архив $name", elements)
+    val elements: MutableList<Note> = mutableListOf()
+    val container = Container("Архив $name", elements)
 
     fun open() {
         container.start ( add = {
