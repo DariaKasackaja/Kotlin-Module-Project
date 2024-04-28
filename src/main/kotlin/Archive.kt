@@ -10,6 +10,8 @@ class Archive(name: String) : Element( name ){
             select = { index->
                 println("Заметка ${elements[index - 1].name}")
                 println(" ${elements[index - 1].text}")
+                println("Для продолжения работы нажмите любой символ.")
+                readlnOrNull()
             },
             "заметку")
     }
